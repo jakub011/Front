@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whiteshark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div class="order-container">
+        <form action="handleForm.php" method="POST" class="order-form">
+            <div>
+                <h2>Dane zamówienia</h2>
+                <a href="#" id="close-form">
+                    <img src="./img/close.png" alt="">
+                </a>
+            </div>
+     
+            <label for="amount">Podaj ilość palet</label>
+            <input type="number" placeholder="1" class="short-input" name="amount" id="amount" min="1" max="999">
+     
+            <label>Koszt zamówienia</label>
+            <p class="price"></p>
+     
+            <label>Koszt wysyłki</label>
+            <p>podajemy indywidualnie dla klienta</p>
+     
+            <label>Całkowity Koszt zamówienia</label>
+            <p class="total-price">1234 zł plus koszty wysyłki</p>
+
+            <h2>Dane Zamawiającego</h2>
+     
+            <label for="full_name">Imię i nazwisko</label>
+            <input type="text" placeholder="Imię Nazwisko" class="long-input" name="full_name" id="full_name" required>
+     
+            <label for="company_name">Nazwa Firmy</label>
+            <input type="text" placeholder="Nazwa Firmy" class="long-input" name="company_name" id="company_name" required>
+     
+            <label for="nip">NIP Firmy</label>
+            <input type="text" placeholder="NIP" class="long-input" name="nip" id="nip" required>
+     
+            <label for="email">Adres e-mail</label>
+            <input type="email" placeholder="e-mail" class="long-input" name="email" id="email" required>
+     
+            <label for="phone_number">Nr. tel</label>
+            <input type="tel" placeholder="telefon" class="long-input" name="phone_number" id="phone_number" required>
+     
+            <label for="street_number">Ulica i numer lokalu</label>
+            <input type="text" placeholder="ulica i numer lokalu" class="long-input" name="street_number" id="street_number" required>
+     
+            <label for="city">Miasto</label>
+            <input type="text" placeholder="Miasto" class="long-input" name="city" id="city" required>
+     
+            <label for="postal_code">Kod pocztowy</label>
+            <input type="text" placeholder="Kod pocztowy" class="long-input" name="postal_code" id="postal_code" required>
+     
+            <div class="success">
+                <p>
+                    Formularz został wysłany
+                </p>
+            </div>
+
+            <h2>Dane do wysyłki</h2>
+     
+            <label for="delivery_street_number">Ulica i numer lokalu</label>
+            <input type="text" placeholder="ulica i numer lokalu" class="long-input" name="delivery_street_number" id="delivery_street_number" required>
+     
+            <label for="delivery_city">Miasto</label>
+            <input type="text" placeholder="Miasto" class="long-input" name="delivery_city" id="delivery_city" required>
+     
+            <label for="delivery_postal_code">Kod pocztowy</label>
+            <input type="text" placeholder="Kod pocztowy" class="long-input" name="delivery_postal_code" id="delivery_postal_code" required>
+     
+            <label for="delivery_phone_number">Nr. Tel osoby odbierającej</label>
+            <input type="tel" placeholder="Nr. tel." class="long-input" name="delivery_phone_number" id="delivery_phone_number" required>
+     
+            <button type="submit">Złóż zamówienie &gt;</button>
+        </form>
+    </div>
+    <header>
+        <a href="#"><img src="./img/logo-small.png" alt="" draggable="false"></a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#1">O Wodzie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#2">Warunki Zamówienia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#3">Kontakt</a>
+                </li>
+                <li class="mobile-order order nav-item">Zamów Teraz &gt;</li>
+            </ul>
+        </nav>
+        <a href="#" class="order">Zamów Teraz &gt;</a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <section class="main-section">
+        <h1>Odkryj świeżość natury w <br> każdym łyku</h1>
+        <div>
+            <img src="./img/bottle.png" alt="" class="main-section-bottle" draggable="false">
+            <div class="main-section-shadow"></div>
+            <img src="./img/circles.png" alt="" class="main-section-circles" draggable="false">
+            <h2>Kup Teraz</h2>
+            <img src="./img/blurry-cube.png" alt="" class="main-section-blurry-cube" draggable="false">
+            <img src="./img/sphere.png" alt="" class="main-section-sphere" draggable="false">
+        </div>
+        <img src="./img/halfcircles.png" alt="" class="main-section-halfcircles" draggable="false">
+        <img src="./img/blurry-sphere.png" alt="" class="main-section-blurry-sphere" draggable="false">
+    </section>
+    <section class="discover">
+        <img src="./img/woman.png" alt="">
+        <article>
+            <img src="./img/logo-medium.png" alt="">
+            <h1>
+                Odkryj czystość w każdym łyku <br>
+                wybierz <b>WhiteShark</b>
+            </h1>
+            <a class="order">Zamów Teraz &gt;</a>
+        </article>
+        <img src="./img/sphere.png" alt="" class="discover-sphere">
+    </section>
+    <section class="minerals" id="1">
+        <img src="./img/waves.png" alt="" class="waves">
+        <img src="./img/logo-big.png" alt="" class="logo-big">
+        <h1>WODA GAZOWANA</h1>
+        <h2>WODA ŹRÓDLANA PH 7,47</h2>
+        <article class="tables">
+            <table>
+                <tr>
+                    <th>Kationy</th>
+                    <th>mg/l</th>
+                </tr>
+                <tr>
+                    <th>Sodowy Na<sup>+</sup></th>
+                    <th>3,05</th>
+                </tr>
+                <tr>
+                    <th>Wapniowy Ca<sup>2+</sup></th>
+                    <th>52,10</th>
+                </tr>
+                <tr>
+                    <th>Magnezowy Mg<sup>2+</sup></th>
+                    <th>6,32</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Aniony</th>
+                    <th>mg/l</th>
+                </tr>
+                <tr>
+                    <th>Chlorkowy Cl<sup>-</sup></th>
+                    <th>7,09</th>
+                </tr>
+                <tr>
+                    <th>Siarczanowy Si<sup>2-</sup></th>
+                    <th>33,50</th>
+                </tr>
+                <tr>
+                    <th>Wodorowęglanowy HCO<sup>3-</sup></th>
+                    <th>152,55</th>
+                </tr>
+            </table>
+        </article>
+        <h3 id="2">Woda niskozmineralizowana <br> ze źródła „Hania" w Bystrej Śląskiej. <br><br> Naturalna woda źródlana nasycona CO2 Ogólna zawartość rozpuszczonych składników mineralnych to 270 mg/l PH - 7,47</h3>
+    </section>
+    <section class="terms">
+        <h1>Warunki Zamówienia</h1>
+        <div>
+            <img src="./img/bottle-icon.png" alt="">
+            <p>
+                Cena za sztukę <br><br>
+                <b>0,66 groszy netto</b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/cup-icon.png" alt="">
+            <p>
+                Pojemność butelki <br><br>
+                <b>0,33 litra</b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/euro-pallet-icon.png" alt="">
+            <p>
+                Ilość na palecie <br><br>
+                <b>960 butelek</b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/boxes-icon.png" alt="">
+            <p>
+                Minimalna ilość palet w zamówieniu <br><br>
+                <b>1 paleta</b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/delivery-icon.png" alt="">
+            <p>
+                    Koszt dostawy <br><br>
+                <b>
+                    Koszt wysyłki ustalany indywidualnie <br>
+                    dla Klienta po złożeniu zamówienia
+                </b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/time-icon.png" alt="">
+            <p>
+                Czas Dostawy <br><br>
+                <b>Czas dostawy około 5 dni roboczych</b>
+            </p>
+        </div>
+        <div>
+            <img src="./img/deposit-icon.png" alt="">
+            <p>
+                Kaucja <br><br>
+                <b>
+                    Kaucja za butelke 0.85 netto <br>
+                    Kaucja za skrzynkę 7 netto <br>
+                    Kaucja za euro palete 85 zł
+                </b>
+            </p>
+        </div>
+        <a class="order">Zamów Teraz &gt;</a>
+    </section>
+    <footer id="3">
+        <h1>Kontakt</h1>
+        <article>
+            <p>Serdecznie zapraszamy <br> do składania zamówień.</p>
+            <div>
+                <a href=""><img src="./img/phone-icon.png" alt="">538 209 447</a>
+                <a href=""><img src="./img/mail-icon.png" alt="">info@whiteshark.pl</a>
+            </div>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
